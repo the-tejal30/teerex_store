@@ -3,7 +3,6 @@ import './style.css'
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { CartState } from '../context/context';
-import { BsGithub } from 'react-icons/bs';
 
 const TopNav = () => {
     const { state: { cart } } = CartState()
@@ -15,9 +14,7 @@ const TopNav = () => {
                     <Link to="/" className='link'>
                         <div className="logo">TeeRex <span>Store</span></div>
                     </Link>
-                    <a href="https://github.com/LalitKumar234/TeeRex-Store" target='_blank' className='github link'>
-                        <BsGithub size={25} />
-                    </a>
+                    <img src="/assets/logo.png" alt="logo" style={{ width: '4rem', height: '4rem' }} />
 
                 </div>
                 <ul className='menus'>
